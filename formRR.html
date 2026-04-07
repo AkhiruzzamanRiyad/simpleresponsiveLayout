@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        a:hover{
+            background-color: blue;
+            color: rgb(247, 247, 247);
+        }
+        a:visited{
+            color: green;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 1em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 2em;
+            /* margin-top: 1em; */
+            margin-left: 1em;
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid salmon; */
+            min-height: 90vh;
+            align-items: center;
+        }
+        
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            /* justify-content: center; */
+            /* border: 2px dotted red; */
+        }
+
+        .login-form input {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="https://www.google.com/">Home</a>
+            <a href="https://nextgeeker.com/P1005.php?q=facebook&src=PN1017#gsc.tab=0&gsc.q=facebook&gsc.page=1">Profile</a>
+            <a href="">about</a>
+            <a href="">Blog</a>
+        </div>
+        <a href="">Log in</a>
+    </nav>
+
+    <div class="form-container">
+        <form class="login-form">
+            <h3>Please Login!!</h3>
+            <input type="email" name="" id="" placeholder="Your E-mail" required>
+            <input type="password" name="" id="" placeholder="Your Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>

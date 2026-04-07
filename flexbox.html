@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+        .container {
+            display: flex;
+            height: 400px;
+            border: 2px dashed tomato;
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+
+            /* width: 200px; */
+            /* background-color: #eee; */
+
+     /* justify-content segment 
+    Works only horizontally */
+
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: center; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+
+    /* flex-direction segment 
+    Works in Column and Row only */
+
+            /* flex-direction: row; */
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+
+
+     /* align-items segment 
+    Works only vertically */
+
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+
+
+     /* flex-wrap works in contain space horizontally 
+  when there isn't enough space */
+
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border: 2px solid black;
+            /* margin: 10px; */
+            /* flex: 1; */
+        }
+        /* .box {
+            border: 2px dashed tomato;
+            /* background-color: #eee; */
+            /* height: 50px; */
+            /* width: 50px; */ */
+        /* } */
+
+    </style>
+</head>
+
+<body>
+    <h1>FlexBox Layout</h1>
+    <div class="container">
+        <!-- .box{box-$}*3 -->
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+    </div>
+</body>
+
+</html>
